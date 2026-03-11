@@ -48,7 +48,7 @@ export function Contacto() {
       {/* Botón destacado para el CV */}
       <div style={{ marginTop: '2rem', borderTop: '1px solid #333', paddingTop: '2rem' }}>
         <a 
-          href="/Cv Exequiel Rios.pdf" 
+          href="/Exequiel_Rios_CV_Desarrollador.pdf" 
           target="_blank" 
           rel="noopener noreferrer"
           style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '1rem 2rem', backgroundColor: 'transparent', color: '#646cff', border: '2px solid #646cff', textDecoration: 'none', borderRadius: '50px', fontWeight: 'bold', fontSize: '1.1rem', transition: '0.3s' }}>
