@@ -44,7 +44,16 @@ export function Habilidades() {
         zIndex: 1,
       }}
     >
-      <h2 style={{ textAlign: 'center', fontSize: '2.5rem', marginBottom: '3rem', color: '#646cff' }}>Habilidades Técnicas</h2>
+      <h2
+        style={{
+          textAlign: 'center',
+          fontSize: 'clamp(1.8rem, 6vw, 2.5rem)',
+          marginBottom: 'clamp(1.75rem, 6vw, 3rem)',
+          color: '#646cff',
+        }}
+      >
+        Habilidades Técnicas
+      </h2>
       
       <div
         style={{
