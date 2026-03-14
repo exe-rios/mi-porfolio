@@ -34,10 +34,25 @@ export function Habilidades() {
   ];
 
   return (
-    <section id="habilidades" style={{ padding: '4rem 2rem', maxWidth: '1100px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
+    <section
+      id="habilidades"
+      style={{
+        padding: 'clamp(2.5rem, 6vw, 4rem) clamp(1rem, 4vw, 2rem)',
+        maxWidth: '1100px',
+        margin: '0 auto',
+        position: 'relative',
+        zIndex: 1,
+      }}
+    >
       <h2 style={{ textAlign: 'center', fontSize: '2.5rem', marginBottom: '3rem', color: '#646cff' }}>Habilidades Técnicas</h2>
       
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem' }}>
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(320px, 100%), 1fr))',
+          gap: '2rem',
+        }}
+      >
         {categorias.map((cat, index) => (
           <div key={index} className="tarjeta-animada" style={{ backgroundColor: '#1a1a1a', padding: '2rem', borderRadius: '15px', border: '1px solid #333' }}>
             
@@ -45,14 +60,27 @@ export function Habilidades() {
               {cat.titulo}
             </h3>
             
-            {/* Cambiamos el flex wrap por una grilla interna ordenada de 2 columnas */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1rem' }}>
+            {/* Grilla interna adaptable (evita overflow en pantallas angostas) */}
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '1rem' }}>
               {cat.skills.map((skill, i) => (
-                <div key={i} className="etiqueta-skill" style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', backgroundColor: '#252525', padding: '0.8rem', borderRadius: '8px', border: '1px solid #444' }}>
+                <div
+                  key={i}
+                  className="etiqueta-skill"
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.8rem',
+                    backgroundColor: '#252525',
+                    padding: '0.8rem',
+                    borderRadius: '8px',
+                    border: '1px solid #444',
+                    minWidth: 0,
+                  }}
+                >
                   <span style={{ fontSize: '1.5rem', display: 'flex' }}>
                     {skill.icono}
                   </span>
-                  <span style={{ color: '#eee', fontSize: '0.9rem', fontWeight: 'bold' }}>
+                  <span style={{ color: '#eee', fontSize: '0.9rem', fontWeight: 'bold', overflowWrap: 'anywhere' }}>
                     {skill.nombre}
                   </span>
                 </div>

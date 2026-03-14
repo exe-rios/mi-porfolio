@@ -11,10 +11,10 @@ function App() {
       <FondoAnimado />
       <Navbar />
       
-      <main style={{ marginTop: '6rem', textAlign: 'center', minHeight: '60vh', padding: '0 2rem' }}>
-        <h1 style={{ fontSize: '4rem', marginBottom: '1rem' }}>Exequiel Rios</h1>
-        <p style={{ fontSize: '1.8rem', color: '#888', marginBottom: '2rem' }}>Desarrollador de Software</p>
-        <p style={{ color: '#bbb', maxWidth: '600px', margin: '0 auto', lineHeight: '1.6' }}>
+      <main id="sobre-mi" className="hero-section">
+        <h1 className="titulo-principal">Exequiel Rios</h1>
+        <p className="subtitulo">Desarrollador de Software</p>
+        <p className="descripcion">
           Estudiante de la Tecnicatura en Desarrollo de Software en ITEC El Molino. 
           Me apasiona crear soluciones eficientes, desde el diseño de bases de datos 
           hasta la lógica del backend y la creación de interfaces.

@@ -18,10 +18,23 @@ export function Proyectos() {
   ];
 
   return (
-    <section id="proyectos" style={{ padding: '4rem 2rem', maxWidth: '1200px', margin: '0 auto' }}>
+    <section
+      id="proyectos"
+      style={{
+        padding: 'clamp(2.5rem, 6vw, 4rem) clamp(1rem, 4vw, 2rem)',
+        maxWidth: '1200px',
+        margin: '0 auto',
+      }}
+    >
       <h2 style={{ textAlign: 'center', fontSize: '2.5rem', marginBottom: '3rem', color: '#646cff' }}>Mis Proyectos</h2>
       
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(300px, 100%), 1fr))',
+          gap: '2rem',
+        }}
+      >
         {listaProyectos.map((proyecto, index) => (
           <div key={index} className="tarjeta-animada" style={{ backgroundColor: '#2a2a2a', padding: '2rem', borderRadius: '10px', border: '1px solid #444', position: 'relative', zIndex: 1 }}>
             <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: '#fff' }}>{proyecto.titulo}</h3>

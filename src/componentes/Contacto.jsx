@@ -3,10 +3,20 @@ import { FaEnvelope, FaLinkedin, FaGithub, FaFileDownload } from 'react-icons/fa
 
 export function Contacto() {
   return (
-    <section id="contacto" style={{ padding: '4rem 2rem', maxWidth: '800px', margin: '0 auto', textAlign: 'center', position: 'relative', zIndex: 1 }}>
-      <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem', color: '#646cff' }}>Contacto</h2>
+    <section
+      id="contacto"
+      style={{
+        padding: 'clamp(2.5rem, 6vw, 4rem) clamp(1rem, 4vw, 2rem)',
+        maxWidth: '800px',
+        margin: '0 auto',
+        textAlign: 'center',
+        position: 'relative',
+        zIndex: 1,
+      }}
+    >
+      <h2 style={{ fontSize: 'clamp(1.9rem, 4.5vw, 2.5rem)', marginBottom: '1rem', color: '#646cff' }}>Contacto</h2>
       
-      <p style={{ color: '#bbb', marginBottom: '1rem', fontSize: '1.2rem' }}>
+      <p style={{ color: '#bbb', marginBottom: '1rem', fontSize: 'clamp(1rem, 2.6vw, 1.2rem)' }}>
         ¿Interesado en trabajar juntos o tenés alguna pregunta? ¡Hablemos!
       </p>
       
