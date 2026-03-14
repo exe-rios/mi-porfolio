@@ -36,7 +36,18 @@ export function Proyectos() {
         }}
       >
         {listaProyectos.map((proyecto, index) => (
-          <div key={index} className="tarjeta-animada" style={{ backgroundColor: '#2a2a2a', padding: '2rem', borderRadius: '10px', border: '1px solid #444', position: 'relative', zIndex: 1 }}>
+          <div
+            key={index}
+            className="tarjeta-animada"
+            style={{
+              backgroundColor: '#2a2a2a',
+              padding: 'clamp(1.25rem, 4vw, 2rem)',
+              borderRadius: '10px',
+              border: '1px solid #444',
+              position: 'relative',
+              zIndex: 1,
+            }}
+          >
             <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: '#fff' }}>{proyecto.titulo}</h3>
             <p style={{ color: '#bbb', lineHeight: '1.6', marginBottom: '1.5rem', minHeight: '100px' }}>
               {proyecto.descripcion}

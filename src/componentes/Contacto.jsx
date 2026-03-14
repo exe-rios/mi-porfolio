@@ -32,7 +32,7 @@ export function Contacto() {
           href="https://mail.google.com/mail/?view=cm&fs=1&to=eriosdeveloper@gmail.com" 
           target="_blank" 
           rel="noopener noreferrer"
-          style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.8rem 1.5rem', backgroundColor: '#646cff', color: '#fff', textDecoration: 'none', borderRadius: '5px', fontWeight: 'bold', transition: '0.3s' }}>
+          style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: 'clamp(0.7rem, 2.5vw, 0.8rem) clamp(1.05rem, 4vw, 1.5rem)', backgroundColor: '#646cff', color: '#fff', textDecoration: 'none', borderRadius: '5px', fontWeight: 'bold', transition: '0.3s' }}>
           <FaEnvelope /> Enviarme un Correo
         </a>
 
@@ -41,7 +41,7 @@ export function Contacto() {
           href="https://www.linkedin.com/in/exequiel-rios-465343252" 
           target="_blank" 
           rel="noopener noreferrer"
-          style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.8rem 1.5rem', backgroundColor: '#0a66c2', color: '#fff', textDecoration: 'none', borderRadius: '5px', fontWeight: 'bold' }}>
+          style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: 'clamp(0.7rem, 2.5vw, 0.8rem) clamp(1.05rem, 4vw, 1.5rem)', backgroundColor: '#0a66c2', color: '#fff', textDecoration: 'none', borderRadius: '5px', fontWeight: 'bold' }}>
           <FaLinkedin /> LinkedIn
         </a>
 
@@ -50,7 +50,7 @@ export function Contacto() {
           href="https://github.com/exe-rios" 
           target="_blank" 
           rel="noopener noreferrer"
-          style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.8rem 1.5rem', backgroundColor: '#333', color: '#fff', textDecoration: 'none', borderRadius: '5px', fontWeight: 'bold', border: '1px solid #555' }}>
+          style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: 'clamp(0.7rem, 2.5vw, 0.8rem) clamp(1.05rem, 4vw, 1.5rem)', backgroundColor: '#333', color: '#fff', textDecoration: 'none', borderRadius: '5px', fontWeight: 'bold', border: '1px solid #555' }}>
           <FaGithub /> GitHub
         </a>
       </div>
@@ -61,7 +61,7 @@ export function Contacto() {
           href="/Exequiel_Rios_CV.pdf" 
           target="_blank" 
           rel="noopener noreferrer"
-          style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '1rem 2rem', backgroundColor: 'transparent', color: '#646cff', border: '2px solid #646cff', textDecoration: 'none', borderRadius: '50px', fontWeight: 'bold', fontSize: '1.1rem', transition: '0.3s' }}>
+          style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: 'clamp(0.85rem, 3vw, 1rem) clamp(1.25rem, 5vw, 2rem)', backgroundColor: 'transparent', color: '#646cff', border: '2px solid #646cff', textDecoration: 'none', borderRadius: '50px', fontWeight: 'bold', fontSize: 'clamp(1rem, 3.2vw, 1.1rem)', transition: '0.3s' }}>
           <FaFileDownload /> Descargar CV
         </a>
       </div>

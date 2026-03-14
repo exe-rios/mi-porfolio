@@ -54,7 +54,16 @@ export function Habilidades() {
         }}
       >
         {categorias.map((cat, index) => (
-          <div key={index} className="tarjeta-animada" style={{ backgroundColor: '#1a1a1a', padding: '2rem', borderRadius: '15px', border: '1px solid #333' }}>
+          <div
+            key={index}
+            className="tarjeta-animada"
+            style={{
+              backgroundColor: '#1a1a1a',
+              padding: 'clamp(1.25rem, 4vw, 2rem)',
+              borderRadius: '15px',
+              border: '1px solid #333',
+            }}
+          >
             
             <h3 style={{ fontSize: '1.4rem', marginBottom: '1.5rem', color: '#fff', textAlign: 'center', borderBottom: '1px solid #333', paddingBottom: '1rem' }}>
               {cat.titulo}

@@ -75,3 +75,17 @@
     padding-bottom: 2rem;
   }
 }
+
+@media (max-width: 400px) {
+  #root {
+    padding: 1rem;
+  }
+
+  .hero-section {
+    margin-top: 3.5rem;
+  }
+
+  .subtitulo {
+    margin-bottom: 1.25rem;
+  }
+}
