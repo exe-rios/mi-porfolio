@@ -1,6 +1,7 @@
 export function Navbar() {
   return (
     <nav
+      className="navbar"
       style={{
         display: 'flex',
         justifyContent: 'space-between',
@@ -12,6 +13,7 @@ export function Navbar() {
       }}
     >
       <h2
+        className="navbar-logo"
         style={{
           margin: 0,
           fontSize: 'clamp(1.6rem, 5vw, 2.2rem)',
@@ -26,6 +28,7 @@ export function Navbar() {
         ER<span style={{ color: '#00f2fe', WebkitTextFillColor: 'initial' }}></span>
       </h2>
       <ul
+        className="navbar-links"
         style={{
           listStyle: 'none',
           display: 'flex',
