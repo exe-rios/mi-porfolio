@@ -2,6 +2,8 @@
 import { FaEnvelope, FaLinkedin, FaGithub, FaFileDownload } from 'react-icons/fa';
 
 export function Contacto() {
+  const cvUrl = `${import.meta.env.BASE_URL}Exequiel_Rios_CV.pdf`;
+
   return (
     <section
       id="contacto"
@@ -58,7 +60,7 @@ export function Contacto() {
       {/* Botón destacado para el CV */}
       <div style={{ marginTop: '2rem', borderTop: '1px solid #333', paddingTop: '2rem' }}>
         <a 
-          href="/Exequiel_Rios_CV.pdf" 
+          href={cvUrl} 
           target="_blank" 
           rel="noopener noreferrer"
           style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: 'clamp(0.85rem, 3vw, 1rem) clamp(1.25rem, 5vw, 2rem)', backgroundColor: 'transparent', color: '#646cff', border: '2px solid #646cff', textDecoration: 'none', borderRadius: '50px', fontWeight: 'bold', fontSize: 'clamp(1rem, 3.2vw, 1.1rem)', transition: '0.3s' }}>
