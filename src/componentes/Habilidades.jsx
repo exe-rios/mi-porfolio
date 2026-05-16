@@ -1,5 +1,6 @@
 // Importamos los logos de las tecnologías
-import { FaPython, FaJava, FaDatabase, FaReact, FaJs, FaHtml5, FaCss3Alt, FaGitAlt, FaDesktop, FaVial, FaCogs } from 'react-icons/fa';
+import { FaPython, FaJava, FaDatabase, FaReact, FaJs, FaHtml5, FaCss3Alt, FaGitAlt, FaDesktop, FaVial, FaCogs, FaNodeJs } from 'react-icons/fa';
+import { SiTypescript } from 'react-icons/si';
 
 export function Habilidades() {
   // Ahora cada habilidad es un objeto con su nombre y su ícono a color
@@ -9,7 +10,8 @@ export function Habilidades() {
       skills: [
         { nombre: "Python", icono: <FaPython color="#3776AB" /> },
         { nombre: "Java", icono: <FaJava color="#ED8B00" /> },
-        { nombre: "SQL", icono: <FaDatabase color="#336791" /> }
+        { nombre: "SQL", icono: <FaDatabase color="#336791" /> },
+        { nombre: "TypeScript", icono: <SiTypescript color="#3178C6" /> }
       ]
     },
     {
@@ -19,7 +21,8 @@ export function Habilidades() {
         { nombre: "JavaScript", icono: <FaJs color="#F7DF1E" /> },
         { nombre: "HTML5", icono: <FaHtml5 color="#E34F26" /> },
         { nombre: "CSS3", icono: <FaCss3Alt color="#1572B6" /> },
-        { nombre: "Vite", icono: <FaCogs color="#646CFF" /> }
+        { nombre: "Vite", icono: <FaCogs color="#646CFF" /> },
+        { nombre: "Node.js", icono: <FaNodeJs color="#339933" /> }
       ]
     },
     {

@@ -2,8 +2,8 @@ export function Proyectos() {
   const listaProyectos = [
     {
       titulo: "BikeSystem (Gestión Comercial)",
-      descripcion: "Sistema integral desarrollado en Python para resolver necesidades reales de negocio. Incluye módulos críticos de control de stock, seguimiento de ventas y análisis de flujo de caja. Cuenta con una arquitectura sólida (SQL) y una interfaz gráfica robusta creada con PyQt6. El código fue refactorizado y testeado para asegurar su estabilidad en producción.",
-      tecnologias: ["Python", "PyQt6", "SQL", "Testing", "Lógica de Negocio"]
+      descripcion: "Sistema integral desarrollado utilizando React, TypeScript y Electron para el frontend, junto con un backend construido en Node.js, TypeScript y Express, empleando PostgreSQL como base de datos.",
+      tecnologias: ["React", "TypeScript", "Electron", "Node.js", "Express", "PostgreSQL"]
     },
     {
       titulo: "Sistema de Gestión Hotelera",
